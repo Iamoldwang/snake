@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪食蛇小游戏</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 左侧面板 -->
+        <div class="left-panel">
+            <h1>贪食蛇小游戏</h1>
+            <button id="startGame">开始游戏</button>
+            <div class="difficulty">
+                <label for="difficulty">难度选择:</label>
+                <select id="difficulty">
+                    <option value="200">普通</option>
+                    <option value="100">困难</option>
+                    <option value="50">地狱</option>
+                </select>
+            </div>
+            <p>游戏时长: <span id="gameDuration">0</span> 秒</p>
+            <p>游戏得分: <span id="gameScore">0</span></p>
+        </div>
+        <!-- 中间游戏区域 -->
+        <div class="middle-panel">
+            <canvas id="gameCanvas"></canvas>
+            <div id="pauseOverlay">
+                <h2>游戏暂停</h2>
+                <button id="resumeGame">继续游戏</button>
+                <button id="restartGame">重新开始</button>
+            </div>
+        </div>
+        <!-- 右侧排行榜 -->
+        <div class="right-panel">
+            <h2>得分排行榜 TOP 10</h2>
+            <ol id="scoreboard"></ol>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
