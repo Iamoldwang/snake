@@ -12,8 +12,8 @@ const gameDurationSpan = document.getElementById('gameDuration');
 const scoreboard = document.getElementById('scoreboard');
 
 // 设置游戏画布的宽度和高度
-gameCanvas.width = 500;
-gameCanvas.height = 500;
+gameCanvas.width = 400;
+gameCanvas.height = 400;
 
 // 游戏相关变量
 let gameRunning = false;
